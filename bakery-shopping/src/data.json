@@ -7,7 +7,6 @@
       "description": "Vanilla Cake",
       "price": 60,
       "availableSizes": [
-        "6 inch",
         "8 inch",
         "9 inch",
         "10 inch",
@@ -22,15 +21,7 @@
       "image": "/images/chocolate.jpeg",
       "description": "Chocolate Cake",
       "price": 70,
-      "availableSizes": [
-        "6 inch",
-        "8 inch",
-        "9 inch",
-        "10 inch",
-        "12 inch",
-        "14 inch",
-        "16 inch"
-      ]
+      "availableSizes": ["6 inch", "10 inch", "12 inch", "14 inch", "16 inch"]
     },
     {
       "_id": "cake3",
@@ -88,7 +79,7 @@
       "price": 70,
       "availableSizes": [
         "6 inch",
-        "8 inch",
+
         "9 inch",
         "10 inch",
         "12 inch",
