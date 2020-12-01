@@ -2,6 +2,28 @@ import React, { Component } from 'react';
 import formatCurrency from '../utils';
 
 class Cart extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      address: '',
+      showCheckout: false,
+    };
+  }
+  handleInput = (eve) => {
+    this.setState({ [eve.target.name]: eve.target.value });
+  };
+  createOrder = (e) => {
+    e.preventDefault();
+    const order = {
+      name: this.state.name,
+      email: this.state.email,
+      address: this.state.address,
+      cartItems: this.props.cartItems,
+    };
+    this.props.createOrder(order);
+  };
   render() {
     const { cartItems } = this.props;
     return (
@@ -38,19 +60,66 @@ class Cart extends Component {
             </ul>
           </div>
           {cartItems.length !== 0 && (
-            <div className="cart">
-              <div className="total">
-                <div>
-                  Total:{' '}
-                  {formatCurrency(
-                    cartItems.reduce(
-                      (total, item) => total + item.price * item.count,
-                      0
-                    )
-                  )}
+            <div>
+              <div className="cart">
+                <div className="total">
+                  <div>
+                    Total:{' '}
+                    {formatCurrency(
+                      cartItems.reduce(
+                        (total, item) => total + item.price * item.count,
+                        0
+                      )
+                    )}
+                  </div>
+                  <button
+                    onClick={() => {
+                      this.setState({ showCheckout: true });
+                    }}
+                    className="button primary"
+                  >
+                    Proceed
+                  </button>
                 </div>
-                <button className="button primary">Proceed</button>
               </div>
+              {this.state.showCheckout && (
+                <div className="cart">
+                  <form onSubmit={this.createOrder}>
+                    <ul className="form-container">
+                      <li>
+                        <label>Email</label>
+                        <input
+                          name="name"
+                          type="email"
+                          required
+                          onChange={this.handleInput}
+                        ></input>
+                      </li>
+                      <li>
+                        <label>Name</label>
+                        <input
+                          name="name"
+                          type="text"
+                          required
+                          onChange={this.handleInput}
+                        ></input>
+                      </li>
+                      <li>
+                        <label>Address</label>
+                        <input
+                          name="address"
+                          type="text"
+                          required
+                          onChange={this.handleInput}
+                        ></input>
+                      </li>
+                      <button className="button primary" type="submit">
+                        Checkout
+                      </button>
+                    </ul>
+                  </form>
+                </div>
+              )}
             </div>
           )}
         </div>
