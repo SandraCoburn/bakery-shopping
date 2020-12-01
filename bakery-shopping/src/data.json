@@ -1,0 +1,123 @@
+{
+  "products": [
+    {
+      "_id": "cake1",
+      "title": " Cake 1",
+      "image": "/images/vanilla.jpeg",
+      "description": "Vanilla Cake",
+      "price": 60,
+      "availableSizes": [
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake2",
+      "title": " Cake 2",
+      "image": "/images/chocolate.jpeg",
+      "description": "Chocolate Cake",
+      "price": 70,
+      "availableSizes": ["6 inch", "10 inch", "12 inch", "14 inch", "16 inch"]
+    },
+    {
+      "_id": "cake3",
+      "title": " Cake 3",
+      "image": "/images/lemon.jpeg",
+      "description": "Lemon Cake",
+      "price": 60,
+      "availableSizes": [
+        "6 inch",
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake4",
+      "title": " Cake 4",
+      "image": "/images/rainbow.jpeg",
+      "description": "Rainbow Cake",
+      "price": 70,
+      "availableSizes": [
+        "6 inch",
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake5",
+      "title": " Cake 5",
+      "image": "/images/bday.jpeg",
+      "description": "Birthday Cake",
+      "price": 60,
+      "availableSizes": [
+        "6 inch",
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake6",
+      "title": " Cake 6",
+      "image": "/images/pink.jpeg",
+      "description": "Pink Drip Cake",
+      "price": 70,
+      "availableSizes": [
+        "6 inch",
+
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake7",
+      "title": " Cake 7",
+      "image": "/images/fruit.jpeg",
+      "description": "Fruit Cake",
+      "price": 80,
+      "availableSizes": [
+        "6 inch",
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    },
+    {
+      "_id": "cake8",
+      "title": " Cake 8",
+      "image": "/images/unicorn.jpeg",
+      "description": "Unicorn Cake",
+      "price": 60,
+      "availableSizes": [
+        "6 inch",
+        "8 inch",
+        "9 inch",
+        "10 inch",
+        "12 inch",
+        "14 inch",
+        "16 inch"
+      ]
+    }
+  ]
+}
