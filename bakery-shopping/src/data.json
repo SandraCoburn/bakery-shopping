@@ -35,8 +35,7 @@
         "9 inch",
         "10 inch",
         "12 inch",
-        "14 inch",
-        "16 inch"
+        "14 inch"
       ]
     },
     {
@@ -45,15 +44,7 @@
       "image": "/images/rainbow.jpeg",
       "description": "Rainbow Cake",
       "price": 70,
-      "availableSizes": [
-        "6 inch",
-        "8 inch",
-        "9 inch",
-        "10 inch",
-        "12 inch",
-        "14 inch",
-        "16 inch"
-      ]
+      "availableSizes": ["9 inch", "10 inch", "12 inch", "14 inch", "16 inch"]
     },
     {
       "_id": "cake5",
