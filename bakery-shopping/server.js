@@ -10,12 +10,15 @@ app.use(bodyParser.json());
 app.use('/', express.static(__dirname + '/build'));
 app.get('/', (req, res) => res.sendFile(__dirname + '/build/index.html'));
 
-mongoose.connect('mongodb://localhost/bakery-shopping-db', {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  process.env.MONGODB_URL || 'mongodb://localhost/bakery-shopping-db',
+  {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  }
+);
 
 //This will create the model for the enpoints
 const Product = mongoose.model(
