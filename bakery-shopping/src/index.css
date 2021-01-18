@@ -7,6 +7,7 @@ body,
 #root {
   height: 100vh;
   margin: 0;
+  color: #866f57;
 }
 body,
 input,
@@ -260,6 +261,7 @@ th {
   display: flex;
   flex-direction: column;
   padding: 0 5%;
+  color: #866f57;
 }
 
 .hero {
@@ -288,9 +290,12 @@ img {
 }
 .about {
   padding: 10%;
+  color: #866f57;
 }
+
 .about-logo {
   display: flex;
+  width: 500px;
 }
 .about-me {
   flex-direction: column;
@@ -305,4 +310,30 @@ img {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+/* Media Queries*/
+
+@media (max-width: 750px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 40%;
+  }
+  .about-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-logo img {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    padding: 0 0 20px 0;
+    margin-bottom: 20%;
+    width: 200px;
+    height: 200px;
+  }
 }
