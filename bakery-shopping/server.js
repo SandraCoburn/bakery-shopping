@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost/bakery-shopping-db', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 //This will create the model for the enpoints
@@ -36,9 +37,21 @@ app.post('/api/products', async (req, res) => {
   const savedProduct = await newProduct.save();
   res.send(savedProduct);
 });
-
+//To update a product
+app.put('/api/products/:id', (req, res) => {
+  const productProps = req.body;
+  Product.findByIdAndUpdate({ _id: req.params.id }, productProps)
+    .then(() => {
+      Product.findById({ _id: req.params.id });
+      console.log(req.body);
+    })
+    .then((product) => {
+      res.send(productProps);
+    })
+    .catch((err) => console.log({ message: err.message }));
+});
 //To delete a product
-app.delete('/app/products/:id', async (req, res) => {
+app.delete('/api/products/:id', async (req, res) => {
   const deleteProduct = await Product.findByIdAndDelete(req.params.id);
   res.send(deleteProduct);
 });

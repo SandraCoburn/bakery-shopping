@@ -13,13 +13,22 @@ class App extends React.Component {
           <div className="grid-container">
             <header>
               <Link to="/">Bakery Shopping Cart</Link>
-              <Link to="/adm">Admin</Link>
+              <Link to="/admin">Admin</Link>
             </header>
             <main>
               <Route path="/admin" component={AdminScreen} />
               <Route path="/" component={HomeScreen} exact />
             </main>
-            <footer>All rights reserved.</footer>
+            <footer>
+              <span>&copy;</span> 2021 All rights reserved. Created by:
+              <Link
+                className="designer"
+                href="https://www.sandracwebdeveloper.com/"
+              >
+                Sandra Coburn
+              </Link>
+              .
+            </footer>
           </div>
         </BrowserRouter>
       </Provider>

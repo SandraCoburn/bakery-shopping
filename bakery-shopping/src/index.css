@@ -87,10 +87,14 @@ footer {
 }
 img {
   width: 100%;
+  object-fit: cover;
 }
 .product img {
-  max-width: 30rem;
-  max-height: 30rem;
+  width: 30rem;
+  height: 30rem;
+}
+.designer {
+  color: white;
 }
 .product-price {
   display: flex;
