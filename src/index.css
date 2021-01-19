@@ -331,6 +331,9 @@ img {
 .about-me {
   flex-direction: column;
 }
+.about-me p {
+  margin-left: 2%;
+}
 
 /* Gallery*/
 .gallery {
