@@ -293,7 +293,7 @@ th {
 }
 .shop-button.md-button {
   width: 115px;
-  margin-left: 40%;
+  margin-left: 43%;
 }
 .hero {
   padding: 2%;
@@ -330,6 +330,7 @@ img {
 }
 .about-me {
   flex-direction: column;
+  padding-left: 2%;
 }
 .about-me p {
   margin-left: 2%;
