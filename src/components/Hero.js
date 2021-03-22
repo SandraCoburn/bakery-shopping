@@ -6,7 +6,7 @@ const Hero = () => {
   const { push } = useHistory();
   const routeToShop = (event) => {
     event.preventDefault();
-    push('/products');
+    push('/cart');
   };
   return (
     <div className="hero">
