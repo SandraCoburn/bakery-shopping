@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImg from '../assets/bgcookies.jpg';
 import { useHistory } from 'react-router-dom';
 
+//This redirects to cart with items to select
 const Hero = () => {
   const { push } = useHistory();
   const routeToShop = (event) => {
